@@ -7,3 +7,7 @@
 .container {
     @apply ml-auto mr-auto
 }
+
+html,body {
+    font-family: 'Montserrat';
+}
