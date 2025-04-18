@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+.bold {
+    @apply font-bold
+}
+
+.container {
+    @apply ml-auto mr-auto
+}
