@@ -1,9 +1,9 @@
 <template>
     <div>
-        <h1>Login Layout</h1>
-        <hr>
-
         <slot />
+
+        <hr>
+        <h1>Login Layout</h1>
     </div>
 </template>
 
