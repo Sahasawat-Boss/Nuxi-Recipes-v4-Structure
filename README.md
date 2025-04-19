@@ -1,75 +1,32 @@
-# Nuxt Minimal Starter
+# 🍳 Nuxi Recipes — v4 Structure
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A modern and beginner-friendly recipe app built with **Nuxt 3**, using the latest **v4 file structure** and best practices.
+![image](https://github.com/user-attachments/assets/da7603a4-a5b2-4139-b6e5-ba03f712ef29)
 
-## Setup
+---
 
-Make sure to install dependencies:
+## 🚀 Features
 
-```bash
-# npm
-npm install
+- ✅ Built with Nuxt 3 and Vue 3
+- ✅ Uses the new `app/` directory structure from Nuxt v4
+- ✅ Recipe listing with API integration
+- ✅ Dynamic recipe detail pages
+- ✅ Stylish ingredient checklist with interactive checkboxes
+- ✅ Responsive design with Tailwind CSS
+- ✅ SEO meta integration using `useSeoMeta()`
+- ✅ Lazy-loaded and optimized images via `NuxtImg`
+- ✅ Smooth scroll navigation and modern UI layout
+- ✅ Interactive todo checklist page with:
+  - Add new task
+  - Mark as complete (with visual feedback)
+  - Remove task
+---
+## 🔗 API Used
+[DummyJSON Recipes API](https://dummyjson.com/recipes)
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## 🛠 Tech Stack
+- Nuxt 3 (v4 structure)
+- Vue 3 (Composition API)
+- Tailwind CSS
+- TypeScript
+- @nuxt/image for optimized image handling
