@@ -1,6 +1,9 @@
 # 🍳 Nuxi Recipes — v4 Structure
 
 A modern and beginner-friendly recipe app built with **Nuxt 3**, using the latest **v4 file structure** and best practices.
+
+Live: https://nuxi-recipes-demo.netlify.app/
+
 ![image](https://github.com/user-attachments/assets/da7603a4-a5b2-4139-b6e5-ba03f712ef29)
 
 ---
