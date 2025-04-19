@@ -80,6 +80,8 @@
                 </div>
             </div>
         </section>
+
+        <ScrollUp/>
     </main>
 </template>
 

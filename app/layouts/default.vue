@@ -2,8 +2,8 @@
     <div>
         <BaseNav />
         <slot />
-        <hr class="mt-10" />
-        <h1>Default Layout</h1>
+        <hr class="mt-12 border-t border-gray-300" />
+        <h1 class="text-center py-2">Default Layout</h1>
     </div>
 </template>
 

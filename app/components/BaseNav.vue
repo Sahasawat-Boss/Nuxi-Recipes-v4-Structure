@@ -1,5 +1,5 @@
 <template>
-    <header class="py-2.5 sm:py-4 shadow-sm">
+    <header class="py-3 sm:py-5.5 shadow-sm">
         <nav class="flex flex-col sm:flex-row container px-4">
             <NuxtLink to="/" class="flex gap-1 items-center">
                 <!-- <img class="w-14" src="public/icon-green.png" alt="icon" /> -->

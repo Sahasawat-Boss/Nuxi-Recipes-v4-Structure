@@ -12,9 +12,9 @@
                 This version has been upgraded and enhanced by
                 <span class="font-bold">Sahasawat (Boss)</span>
                 with the latest features and improvements including: Improved
-                responsive layout SEO enhancements using useSeoMeta()
-                Interactive ingredient checklist & todo list Optimized
-                lazy-loaded images with NuxtImg Smooth scrolling and UI
+                responsive layout, SEO enhancements using useSeoMeta(), 
+                Interactive ingredient checklist & todo list, Optimized
+                lazy-loaded images with NuxtImg, Smooth scrolling and UI
                 refinements
             </p>
             <NuxtLink to="/">
