@@ -16,3 +16,17 @@ A modern and beginner-friendly recipe app built with **Nuxt 3**, using the lates
 - ✅ SEO meta integration using `useSeoMeta()`
 - ✅ Lazy-loaded and optimized images via `NuxtImg`
 - ✅ Smooth scroll navigation and modern UI layout
+- ✅ Interactive todo checklist page with:
+  - Add new task
+  - Mark as complete (with visual feedback)
+  - Remove task
+---
+## 🔗 API Used
+[DummyJSON Recipes API](https://dummyjson.com/recipes)
+
+## 🛠 Tech Stack
+- Nuxt 3 (v4 structure)
+- Vue 3 (Composition API)
+- Tailwind CSS
+- TypeScript
+- @nuxt/image for optimized image handling
