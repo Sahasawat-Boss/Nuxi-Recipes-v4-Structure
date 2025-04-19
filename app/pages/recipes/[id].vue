@@ -104,6 +104,41 @@ if (error.value) {
         statusText: error.value?.statusMessage,
     });
 }
+
+useHead({
+    htmlAttrs: {
+        lang: "en",
+    },
+    link: [
+        {
+            rel: "icon",
+            type: "image/png",
+            href: "/favicon.ico",
+        },
+    ],
+});
+
+useSeoMeta({
+    title: computed(() => `Nuxt Recipes | ${data.value?.name || 'Recipe'}`),
+    description: computed(
+        () =>
+            `Learn how to cook ${data.value?.name} with easy, delicious steps.`
+    ),
+    ogTitle: computed(() => data.value?.name || "Recipe"),
+    ogDescription: computed(
+        () =>
+            `Try this recipe: ${data.value?.name}. A favorite with ${data.value?.caloriesPerServing} calories per serving!`
+    ),
+    ogImage: computed(() => data.value?.image || "/default-recipe.jpg"),
+    ogUrl: computed(() => `https://yourdomain.com/recipes/${recipeId}`),
+
+    twitterTitle: computed(() => data.value?.name || "Recipe"),
+    twitterDescription: computed(
+        () => `Quick and easy guide to cook ${data.value?.name}`
+    ),
+    twitterImage: computed(() => data.value?.image || "/default-recipe.jpg"),
+    twitterCard: "summary_large_image",
+});
 </script>
 
 <style scoped>

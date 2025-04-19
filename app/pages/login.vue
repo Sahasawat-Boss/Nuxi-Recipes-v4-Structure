@@ -37,6 +37,10 @@
 definePageMeta({
     layout: "login",
 });
+
+useSeoMeta({
+    title: "Nuxi Recipes | Login",
+});
 </script>
 
 <style></style>
