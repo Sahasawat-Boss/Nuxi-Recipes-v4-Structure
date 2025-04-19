@@ -1,6 +1,6 @@
 <template>
     <header class="py-4 border-b border-black/10">
-        <nav class="flex container items-center">
+        <nav class="flex container px-4 items-center">
             <NuxtLink to="/" class="flex gap-1 items-center">
                 <!-- <img class="w-14" src="public/icon-green.png" alt="icon" /> -->
                 <NuxtImg width="56px" src="/icon-green.png" alt="icon" />

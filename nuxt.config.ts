@@ -35,8 +35,13 @@ export default defineNuxtConfig({
     }
   },
 
+  image: {
+    domains: ["https://cdn.dummyjson.com"],
+    //Set for make nuxt know we get this image from here and can edit image size
+  },
+
   devtools: { enabled: true },
-  css: ['/assets/css/global.css'],
+  css: ['/assets/css/global.css','/assets/css/animation.css'], 
   vite: {
     plugins: [
       tailwindcss(),
@@ -51,5 +56,6 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       Montserrat: true,
-  }},
+    }
+  },
 })
