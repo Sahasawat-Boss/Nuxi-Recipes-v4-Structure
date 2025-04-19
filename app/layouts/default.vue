@@ -2,7 +2,7 @@
     <div>
         <BaseNav />
         <slot />
-        <hr>
+        <hr class="mt-10">
         <h1>Default Layout</h1>
     </div>
 </template>

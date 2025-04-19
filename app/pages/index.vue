@@ -18,7 +18,6 @@
                     <NuxtLink
                         class="px-4 py-2 text-white self-start bg-amber-600/95 rounded-md text-lg hover"
                     >
-                        <!-- :to="`/recipes/${recipes.id}`" -->
                         Browse Recipes
                     </NuxtLink>
                 </div>
@@ -50,8 +49,10 @@
             >
                 <div
                     v-for="recipes in data?.recipes"
+                    :key="recipes.id"
                     class="flex flex-col shadow rounded-md"
                 >
+                    <!-- :key is important for performance, correctness, and avoiding subtle bugs in Vue. -->
                     <NuxtImg
                         :src="recipes.image"
                         format="webp"
@@ -72,27 +73,38 @@
                                     name="mdi:clock-time-eight-outline"
                                     style="color: #f79f1a"
                                 />
-                                <span class="text-xs text-black/55">Cook Time</span>
-                                <span class="font-semibold">{{ recipes.cookTimeMinutes }}</span>
+                                <span class="text-xs text-black/55"
+                                    >Cook Time</span
+                                >
+                                <span class="font-semibold">{{
+                                    recipes.cookTimeMinutes
+                                }}</span>
                             </div>
                             <div class="flex flex-col items-center gap-1">
                                 <Icon name="mdi:fire" style="color: #f79f1a" />
-                                <span class="text-xs text-black/55">Calories</span>
-                                <span class="font-semibold">{{ recipes.caloriesPerServing }}</span>
+                                <span class="text-xs text-black/55"
+                                    >Calories</span
+                                >
+                                <span class="font-semibold">{{
+                                    recipes.caloriesPerServing
+                                }}</span>
                             </div>
                             <div class="flex flex-col items-center gap-1">
                                 <Icon name="mdi:star" style="color: #f79f1a" />
                                 <span class="text-xs text-black/55"
                                     >Rating</span
                                 >
-                                <span class="font-semibold">{{ recipes.rating }}</span>
+                                <span class="font-semibold">{{
+                                    recipes.rating
+                                }}</span>
                             </div>
                         </div>
-                        <button
+                        <NuxtLink
+                            :to="`/recipes/${recipes.id}`"
                             class="px-4.5 py-1 text-white self-start bg-amber-600/95 rounded-md text-base lg:text-lg hover"
                         >
                             View
-                        </button>
+                        </NuxtLink>
                     </div>
                 </div>
             </div>

@@ -10,12 +10,12 @@
                     >
                         Login Page Test
                     </h1>
-                    <NuxtLink
-                        to="/"
-                        class="px-7 py-3.5 text-white self-start bg-amber-600/95 rounded-md text-xl hover"
-                    >
-                        <!-- :to="`/recipes/${recipes.id}`" -->
-                        Back Home
+                    <NuxtLink to="/">
+                        <button
+                            class="px-4 py-2 text-white self-start bg-amber-600/95 rounded-md text-xl hover"
+                        >
+                            Back Home
+                        </button>
                     </NuxtLink>
                 </div>
                 <div class="flex-1 order-1 lg:order-1">
