@@ -23,18 +23,18 @@
                 </li>
                 <li>
                     <NuxtLink
-                        to="/about"
-                        active-class="text-amber-600 underline"
-                        exact-active-class="text-amber-600 underline"
-                        >About</NuxtLink
+                    to="/checklist"
+                    active-class="text-amber-600 underline"
+                    exact-active-class="text-amber-600 underline"
+                    >Checklist</NuxtLink
                     >
                 </li>
                 <li>
                     <NuxtLink
-                        to="/checklist"
+                        to="/about"
                         active-class="text-amber-600 underline"
                         exact-active-class="text-amber-600 underline"
-                        >Checklist</NuxtLink
+                        >About</NuxtLink
                     >
                 </li>
                 <li>
