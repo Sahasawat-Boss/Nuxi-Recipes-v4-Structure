@@ -27,6 +27,14 @@
                 </li>
                 <li>
                     <NuxtLink
+                        to="/checklist"
+                        active-class="text-amber-600 underline"
+                        exact-active-class="text-amber-600 underline"
+                        >Checklist</NuxtLink
+                    >
+                </li>
+                <li>
+                    <NuxtLink
                         to="/login"
                         active-class="text-amber-600 underline"
                         exact-active-class="text-amber-600 underline"
