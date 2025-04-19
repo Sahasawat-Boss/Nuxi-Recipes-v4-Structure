@@ -3,7 +3,7 @@
         <HeroSection />
 
         <!-- Fetch Recipe Data -->
-        <section class="py-16 px-10 container" id="all-recipe">
+        <section class="py-16 px-10 container fade-in " id="all-recipe">
             <h2 class="text-3xl mb-2 font-bold">Top Picks for You</h2>
             <p class="text-lg lg:text-xl mb-8">
                 Explore our most-loved recipes!
@@ -72,7 +72,7 @@
                         </div>
                         <NuxtLink
                             :to="`/recipes/${recipes.id}`"
-                            class="px-4.5 py-1 text-white self-start bg-amber-600/95 rounded-md text-base lg:text-lg hover"
+                            class="btn-pri scale-85"
                         >
                             View
                         </NuxtLink>

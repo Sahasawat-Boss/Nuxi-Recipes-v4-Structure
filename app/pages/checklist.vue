@@ -1,7 +1,7 @@
 <template>
     <section class="max-w-screen-lg mx-auto px-6 py-12">
-        <h2 class="text-3xl font-semibold mb-4">Checklist</h2>
-        <p class="text-lg mb-6">
+        <h2 class="text-3xl font-semibold mb-4 fade-left">Checklist</h2>
+        <p class="text-lg mb-6 fade-right">
             Keep track of everything you need to get done.
         </p>
 
@@ -23,7 +23,7 @@
         </div>
 
         <!-- Todo List -->
-        <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-lg">
+        <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-lg fade-in">
             <li
                 v-for="(todo, index) in todos"
                 :key="index"

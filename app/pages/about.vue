@@ -1,8 +1,8 @@
 <template>
     <main>
         <section class="container py-12 px-6">
-            <h1 class="text-3xl bold mb-6 text-balance">About Nuxtcipes:</h1>
-            <p class="text-lg mb-6 text-balance">
+            <h1 class="text-3xl bold mb-6 text-balance fade-right">About Nuxtcipes:</h1>
+            <p class="text-lg mb-6 text-balance fade-left">
                 Nuxtcipes is a modern recipe application originally built by
                 <span class="font-bold"> John Komarnicki </span> as part of the
                 Build Modern Apps with Nuxt course. It integrates with the
@@ -19,7 +19,7 @@
             </p>
             <NuxtLink to="/">
                 <button
-                    class="px-4 py-2 text-white self-start bg-amber-600/95 rounded-md text-lg hover"
+                    class="btn-pri fade-up"
                 >
                     Back Home
                 </button>
