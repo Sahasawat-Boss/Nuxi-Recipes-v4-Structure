@@ -3,7 +3,7 @@
         <HeroSection />
 
         <!-- Fetch Recipe Data -->
-        <section class="py-16 px-10 container">
+        <section class="py-16 px-10 container" id="all-recipe">
             <h2 class="text-3xl mb-2 font-bold">Top Picks for You</h2>
             <p class="text-lg lg:text-xl mb-8">
                 Explore our most-loved recipes!
@@ -25,6 +25,8 @@
                         sizes="100vw lg:400px"
                         densities="x1"
                         alt="recipes image"
+                        loading="lazy"
+                        placeholder="blur"    
                         class="rounded-t-xl w-full"
                     />
                     <div class="flex flex-col py-6 px-4 flex-1">

@@ -13,6 +13,7 @@
                 </p>
 
                 <NuxtLink
+                    to="#all-recipe"
                     class="px-4 py-2 text-white self-start bg-amber-600/95 rounded-md text-lg hover"
                 >
                     Browse Recipes

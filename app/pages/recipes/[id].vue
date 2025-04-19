@@ -40,7 +40,9 @@
             densities="x1"
             sizes="xs:100vw sm:100vw md:100vw lg:100vw"
             class="w-full max-h-[500px] object-cover rounded-md shadow-sm mb-12"
-            alt=""
+            alt="recipes image"
+            loading="lazy"
+            placeholder="blur" 
         />
 
         <!-- Ingredients -->

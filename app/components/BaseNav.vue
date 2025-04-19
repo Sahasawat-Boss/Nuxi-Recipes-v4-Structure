@@ -1,10 +1,14 @@
 <template>
-    <header class="py-2.5 sm:py-4 border-b border-black/10">
+    <header class="py-2.5 sm:py-4 shadow-sm">
         <nav class="flex flex-col sm:flex-row container px-4">
             <NuxtLink to="/" class="flex gap-1 items-center">
                 <!-- <img class="w-14" src="public/icon-green.png" alt="icon" /> -->
                 <NuxtImg width="40px" src="/icon-green.png" alt="icon" />
-                <span class="text-xl md:text-3xl font-bold">Nuxi-Recipes</span>
+                <span
+                    class="text-xl md:text-3xl font-bold bg-gradient-to-r from-green-600 to-black text-transparent bg-clip-text"
+                >
+                    Nuxi Recipes
+                </span>
             </NuxtLink>
             <ul
                 class="flex gap-5.5 items-center ml-auto sm:text-lg font-bold capitalize"
