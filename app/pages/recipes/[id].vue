@@ -11,7 +11,9 @@
     <div class="flex flex-col max-w-screen-lg container px-10 py-8">
         <!-- Header -->
         <div class="flex flex-col mb-6">
-            <h2 class="text-5xl mb-4 font-semibold">{{ data?.name }}</h2>
+            <h2 class="text-2xl md:text-5xl mb-4 font-semibold">
+                {{ data?.name }}
+            </h2>
             <div class="flex gap-4 text-xl mb-6">
                 <div class="flex items-center gap-1">
                     <Icon
@@ -43,9 +45,10 @@
 
         <!-- Ingredients -->
         <div class="mb-8">
-            <h2 class="text-3xl font-semibold mb-4">Ingredients</h2>
+            <h2 class="text-2xl font-semibold mb-4">Ingredients</h2>
             <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-lg">
                 <li v-for="ingredient in data?.ingredients" :key="ingredient">
+                    <!-- don't use an id like ingredient.id as the :key Because ingredient is just a string, not an object-->
                     <label class="flex gap-2 items-center">
                         <input class="hidden peer" type="checkbox" />
                         <div
@@ -61,10 +64,11 @@
 
         <!-- Instructions -->
         <div>
-            <h2 class="text-3xl font-medium mb-4">Instructions</h2>
+            <h2 class="text-2xl bold mb-4">Instructions</h2>
             <ul class="flex flex-col text-lg gap-4">
                 <li
-                    v-for="(instruction, index) in data?.instructions " :key="instruction"
+                    v-for="(instruction, index) in data?.instructions"
+                    :key="instruction"
                     class="flex gap-2"
                 >
                     <span
@@ -93,6 +97,13 @@ const { data: rawData, error } = await useFetch<RecipeRes>(
 const data = computed(() => {
     return rawData.value?.recipes.find((r: any) => r.id === recipeId);
 });
+
+if (error.value) {
+    throw createError({
+        status: error.value?.statusCode,
+        statusText: error.value?.statusMessage,
+    });
+}
 </script>
 
 <style scoped>
